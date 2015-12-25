@@ -2,6 +2,7 @@
   "name": "wps",
   "version": "0.0.2",
   "description": "Skeleton for webpack",
+  "repository": "https://github.com/aunz/wps",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

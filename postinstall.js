@@ -23,6 +23,3 @@ tmp.babel = {
 }
 JSON.stringify(tmp,null,2).to('../../package.json')	
 
-//copy the .gitignore file
-const fs = require('fs')
-fs.createReadStream('./.gitignore').pipe(fs.createWriteStream('../../.gitignore'))
