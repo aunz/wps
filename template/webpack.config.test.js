@@ -4,14 +4,13 @@ const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
-  entry: ['./index.js'],
+  entry: ['./test/index.js'],
   output: {
-    path: './build',
-    filename: 'bundle.js',
-    // libraryTarget: 'var',
-    // library: path.basename(path.resolve())
+    path: './test/build',
+    filename: 'test.bundle.js',
+    libraryTarget: 'commonjs2',    
   },
-  //target: 'web',
+  target: 'node',
   module: {
     loaders: [{
       test: /\.jsx?$/,
@@ -27,12 +26,12 @@ module.exports = {
   plugins: [
   
   ],
-/*  externals: [
+  externals: [
     /^[@a-z][a-z\/\.\-0-9]*$/i
   ],
   node: {
     console: true,
     __filename: true,
     __dirname: true,
-  }*/
+  }
 }

@@ -1,3 +1,1 @@
-require('shelljs/global')
-
-rm('-rf', './build')
+require('shelljs').rm('-rf', './build')
