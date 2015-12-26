@@ -4,11 +4,11 @@ const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
-  entry: ['./test/index.js'],
+  entry: ['./test/index.test.js'],
   output: {
     path: './test/build',
-    filename: 'test.bundle.js',
-    libraryTarget: 'commonjs2',    
+    filename: 'bundle.test.js',
+    libraryTarget: 'commonjs2',
   },
   target: 'node',
   module: {
@@ -27,11 +27,11 @@ module.exports = {
   
   ],
   externals: [
-    /^[@a-z][a-z\/\.\-0-9]*$/i
+    // /^[@a-z][a-z\/\.\-0-9]*$/i
   ],
-  node: {
+  /*node: {
     console: true,
     __filename: true,
     __dirname: true,
-  }
+  }*/
 }

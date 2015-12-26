@@ -4,7 +4,7 @@ const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
-  entry: ['./index.js'],
+  entry: ['./src/index.js'],
   output: {
     path: './build',
     filename: 'bundle.js',
@@ -27,9 +27,9 @@ module.exports = {
   plugins: [
   
   ],
-/*  externals: [
-    /^[@a-z][a-z\/\.\-0-9]*$/i
-  ],
+  externals: [
+    // /^[@a-z][a-z\/\.\-0-9]*$/i
+  ]/*,
   node: {
     console: true,
     __filename: true,
