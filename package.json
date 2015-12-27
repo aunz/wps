@@ -1,6 +1,6 @@
 {
   "name": "wps",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Skeleton for webpack",
   "repository": "https://github.com/aunz/wps",
   "main": "index.js",
